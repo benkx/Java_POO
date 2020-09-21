@@ -2,7 +2,7 @@
 
 
 ## Empleado por comision 3
-```
+```java
 package empleadoporcomision;
 
 public class EmpleadoPorComision3 {
