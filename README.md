@@ -121,3 +121,42 @@ public class EmpleadoBaseMasComision4 extends EmpleadoPorComision3 {
     }
 }
 ```
+
+## Desplegando la Aplicacion
+
+```java
+public class EmpleadoPorComision {
+
+    
+    public static void main(String[] args) {
+        //Crea instacia de un obejeto EmpleadoBaseMasComision4
+        
+        EmpleadoBaseMasComision4 empleado  = new 
+        EmpleadoBaseMasComision4("Bob", "Marly", "222-222", 4440, 40, 3000);
+        //Asignamos la referencia a la superclase de una varriable de la superclase
+        EmpleadoPorComision3 emplePorComision = 
+                new EmpleadoPorComision3("Juan", "Jose",  "123-3231", 1200, 87609);
+//                
+//       //invoca a toString en un objeto de la subclase, usuando una variable de la superclase
+//        EmpleadoPorComision3 emplePorComision2 = empleado;
+//        System.out.printf("%s %s: \n\n%s\n",
+//                "Llamando a toString de EmpleadoBaseComision con"
+//                        +" referencia de superclase",
+//                "a un objeteo de la subclase", emplePorComision2.toString());
+//                
+
+        //Obtenemos datos del empleado por comision con sueldo base
+        System.out.println("Informacion del empleado obtenido por los metodos establecer: \n");
+        System.out.printf("%s %s\n", "El primer nombre es: ", empleado.getPrimerNombre());
+        System.out.printf("%s %s\n", "El Apellido es: ", empleado.getApellidoPaterno());
+        System.out.printf("%s %s\n", "El Numero de seguro social es: ", empleado.getNumeroSeguroSocial());
+        System.out.printf("%s %s\n", "Venta:", empleado.getVentasBrutas());
+        System.out.printf("%s %s\n", "Tarifa: ", empleado.getTarifaComision());
+        System.out.printf("%s %s\n", "Salario base: ", empleado.getSalarioBase());
+        
+        empleado.setSalarioBase(200000);//establece el salario
+        System.out.printf("%s %s\n", "Informacion actualizada del empleado obtenido por el ToString", empleado.toString());
+    }
+    
+}
+```
