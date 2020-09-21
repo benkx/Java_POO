@@ -82,4 +82,42 @@ public class EmpleadoPorComision3 {
     }
 }
 ```
+### Empleado base mas comision
 
+```java
+package empleadoporcomision;
+
+
+public class EmpleadoBaseMasComision4 extends EmpleadoPorComision3 {
+
+    private double salarioBase; //Salario base 
+
+    public EmpleadoBaseMasComision4(String nombre, String apellido,
+            String nss, double ventas, double tarifa, double salario) {
+        super(nombre, apellido, nss, ventas, tarifa);
+
+        setSalarioBase(salario); //Valida y almacena el salrio base
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(double salario) {
+        salarioBase = (salario < 0.0) ? 0.0 : salario;
+    }
+
+    @Override
+    public double ingreso() {
+        return getSalarioBase() + super.ingreso();
+    }
+
+    @Override
+     public String toString()
+    {
+       
+        return String.format("%s %s\n%s: %.2f" , 
+                "con sueldo base", super.toString(), "Sueldo base", getSalarioBase());
+    }
+}
+```
