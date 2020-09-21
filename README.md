@@ -1,1 +1,2 @@
-# Java_POO
+Principios de la programacion orientada a objetos (POO)
+
