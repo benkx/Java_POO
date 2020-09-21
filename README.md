@@ -1,5 +1,9 @@
 ## Principios de la programacion orientada a objetos (POO)
 
+### Principio de responsabilidad única
+_El Principio de responsabilidad única (Single Responsability Principle - SRP) fue acuñado por Robert C. Martin en un artículo del mismo título y popularizado a través de su conocido libro [1]. SRP tiene que ver con el nivel de acoplamiento entre módulos dentro de la ingeniería del software. En términos prácticos, este principio establece que:
+Una clase debe tener una y solo una única causa por la cual puede ser modificada.
+Si una clase tiene dos responsabilidades, entonces asume dos motivos por los cuales puede ser modificada._
 
 ## Empleado por comision 3
 ```java
