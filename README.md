@@ -4,6 +4,8 @@
 _El Principio de responsabilidad única (Single Responsability Principle - SRP) fue acuñado por Robert C. Martin en un artículo del mismo título y popularizado a través de su conocido libro [1]. SRP tiene que ver con el nivel de acoplamiento entre módulos dentro de la ingeniería del software. En términos prácticos, este principio establece que:
 Una clase debe tener una y solo una única causa por la cual puede ser modificada.
 Si una clase tiene dos responsabilidades, entonces asume dos motivos por los cuales puede ser modificada._
+### Solid
+_Los principios solid pretenden ser una guía a seguir durante la fase de desarrollo para facilitar el mantenimiento de las aplicaciones y tratar de eliminar el impacto de las inevitables modificaciones que éstas sufren durante su ciclo de vida, además de facilitar el uso de las unidades de testeo, entre otras ventajas._
 
 ## Empleado por comision 3
 ```java
