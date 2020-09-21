@@ -164,3 +164,10 @@ public class EmpleadoPorComision {
     
 }
 ```
+
+## Autores ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Rhosben Cordoba** - *Trabajo Inicial* - [benkx](https://github.com/benkx)
+* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
